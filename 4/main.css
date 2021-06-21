@@ -1,0 +1,206 @@
+body {
+    background-color: #0d5825
+}
+
+#art {
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 33px;
+    font-weight: bold;
+}
+
+#art2 {
+    font-size: 25px;
+    font-style: italic;
+    color:white;
+    text-align:center;
+    padding-top: 5px;
+}
+
+.hiden-hover {
+    z-index: 100;
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background: #807D7D;
+    left: -180px;
+    transition: all 0.3s linear;
+    padding-left: 15px;
+}
+
+.hiden-hover:hover {
+    left: -1px;
+}
+
+.hiden-hover:hover .menu {
+    opacity: 0;
+    transition: 1s;
+}
+
+#ul {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+li:before {
+    width: 6px;
+    height: 6px;
+    background: orange;
+    border: 1px solid black;
+    display: block;
+    transform: translateX(-15px) translateY(12px) rotate(45deg);
+    content: "";
+}
+
+li a:hover {
+    color: orange;
+    transition: .8s;
+}
+
+li > a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    
+}
+
+.menu {
+    color: white;
+    position: absolute;
+    writing-mode: vertical-rl;
+    right: 5px;
+    top: 150px;
+    font-weight: bold;
+    }
+
+.bench {
+    padding-left: 160px;
+    padding-top: 180px;
+    display: flex;
+    justify-content: center;     
+}
+
+.bench img {
+    width: 150px;
+    height: 225px;
+    display: inline-block;
+    position:relative;    
+    top: 0;
+    transition: top .4s;
+}
+
+.bench img:hover {
+    top: -15px;
+}
+
+
+.t {
+    transform: rotate(-25deg);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+}
+
+.m {
+    transform: rotate(-10deg);
+    z-index: 2;
+    left: -97px;
+    position: fixed;
+    padding-top: 8px;
+}
+
+.b {
+    transform: rotate(8deg);
+    left: -189px;
+    z-index: 3;
+    position: fixed;
+    padding-top: 25px;
+}
+
+.thresq {
+    position: absolute;
+    margin-top: 100px;
+    width: 220px;
+    height: 220px;
+    background:white;
+    padding: 100px 0 0 100px; 
+}
+
+.d1 {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    background: #FF8888;
+}
+
+.d2 {
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    background: #7E8AEB;
+}
+
+.d3 {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: #4DEF98;
+}
+
+.ez {
+    position: absolute;
+    margin-left: 325px;
+    margin-top: 100px;
+    background: white;
+    width: 320px;
+    height: 320px;
+}
+
+.moved {
+    background:red;
+    width: 100px;
+    height: 100px;
+    animation: needtosleep 4s  infinite, coloring 4s infinite ease;
+}
+
+@keyframes needtosleep {
+    0%   { transform: translate(0, 0);}
+    25%  { transform: translate(0, 220px); }
+    50%  { transform: translate(220px, 220px);}
+    75%  { transform: translate(220px, 0);}
+    100% { transform: translate(0, 0);}
+}
+
+@keyframes coloring {
+    0% {
+        background-color: red;
+      }
+      25% {
+        background-color: blue;
+      }
+      50% {
+          background-color: green;
+      }
+      75% {
+        background-color: yellow;
+      }
+      100% {
+        background-color: red;
+      }
+    }
+
+
+
